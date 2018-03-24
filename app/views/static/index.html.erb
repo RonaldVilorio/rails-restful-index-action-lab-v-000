@@ -1,4 +1,4 @@
-<%if !@students.empty?
+<%if !@students.empty? || @students != nil
 <%@students.each do |student|%>
   <%=student%>
 <%end%>
