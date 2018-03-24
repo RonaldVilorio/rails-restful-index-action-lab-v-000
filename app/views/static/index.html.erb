@@ -1,5 +1,3 @@
-<%if @students != nil%>
-  <%@students.each do |student|%>
-    <%=student.first_name%>
-  <%end%>
-<%end%>
+
+<%Student.all.each do |student| %>
+  <%
