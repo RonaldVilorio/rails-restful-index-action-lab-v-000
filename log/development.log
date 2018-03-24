@@ -220,3 +220,17 @@ Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafd
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 159.89.113.231 at 2018-03-24 22:57:46 +0000
+
+
+Started GET "/students" for 159.89.113.231 at 2018-03-24 23:00:56 +0000
+Processing by StaticController#index as HTML
+  Rendered static/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%@students.each do |student|%>
+    2:   <%=student%>
+    3: <%end%>
+  app/views/static/index.html.erb:1:in `_app_views_static_index_html_erb__3227350128721845876_70222279655200'
+
+
